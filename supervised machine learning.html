@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supervised Machine Learning - Exam Paper</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+        h2 {
+            color: #6c757d;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+        .question {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+        .question:hover {
+            transform: translateX(10px);
+        }
+        .question-number {
+            color: #3498db;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+        textarea:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 8px rgba(52,152,219,0.2);
+            outline: none;
+        }
+        button {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 40px auto 0;
+            display: block;
+            box-shadow: 0 4px 15px rgba(52,152,219,0.3);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52,152,219,0.4);
+        }
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: rgba(0,0,0,0.1);
+            font-size: 24px;
+            font-weight: 700;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Supervised Machine Learning</h1>
+            <h2>Final Examination - Academic Year 2023/2024</h2>
+        </div>
+        
+        <form action="#" method="post">
+            <!-- Questions -->
+            <div class="question">
+                <span class="question-number">1.</span>
+                What is supervised learning?
+                <textarea name="q1" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <!-- Repeat the question structure for remaining questions -->
+            <div class="question">
+                <span class="question-number">2.</span>
+                How does supervised learning differ from unsupervised learning?
+                <textarea name="q2" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">3.</span>
+                What are the key components of a supervised learning model?
+                <textarea name="q3" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">4.</span>
+                What types of problems are solved using supervised learning?
+                <textarea name="q4" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">5.</span>
+                How does labeled data impact supervised learning performance?
+                <textarea name="q5" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">6.</span>
+                What are some common real-world applications of supervised learning?
+                <textarea name="q6" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">7.</span>
+                What is the difference between classification and regression?
+                <textarea name="q7" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">8.</span>
+                How do you evaluate whether a problem is best solved with supervised learning?
+                <textarea name="q8" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">9.</span>
+                What are the disadvantages of supervised learning?
+                <textarea name="q9" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">10.</span>
+                How does the number of training examples impact model accuracy?
+                <textarea name="q10" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">11.</span>
+                What are the different types of supervised learning algorithms?
+                <textarea name="q11" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">12.</span>
+                How does Linear Regression work?
+                <textarea name="q12" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">13.</span>
+                What are the assumptions of Linear Regression?
+                <textarea name="q13" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">14.</span>
+                How is Logistic Regression different from Linear Regression?
+                <textarea name="q14" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">15.</span>
+                How does a Decision Tree make predictions?
+                <textarea name="q15" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">16.</span>
+                What is overfitting in Decision Trees?
+                <textarea name="q16" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">17.</span>
+                How does Random Forest improve upon Decision Trees?
+                <textarea name="q17" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">18.</span>
+                What is the main idea behind Support Vector Machines (SVM)?
+                <textarea name="q18" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">19.</span>
+                What are kernel functions in SVM?
+                <textarea name="q19" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">20.</span>
+                How does K-Nearest Neighbors (KNN) classify new data points?
+                <textarea name="q20" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">21.</span>
+                What is Naive Bayes, and why is it called "naive"?
+                <textarea name="q21" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">22.</span>
+                What are the advantages and disadvantages of Naive Bayes?
+                <textarea name="q22" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">23.</span>
+                What is an ensemble learning model?
+                <textarea name="q23" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">24.</span>
+                How does Bagging help improve model performance?
+                <textarea name="q24" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">25.</span>
+                What is Boosting in machine learning?
+                <textarea name="q25" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">26.</span>
+                What are Gradient Boosting Machines (GBM)?
+                <textarea name="q26" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">27.</span>
+                How does XGBoost improve Gradient Boosting?
+                <textarea name="q27" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">28.</span>
+                What is LightGBM, and how does it differ from XGBoost?
+                <textarea name="q28" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">29.</span>
+                What is CatBoost, and when is it useful?
+                <textarea name="q29" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">30.</span>
+                How does AdaBoost work?
+                <textarea name="q30" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">31.</span>
+                What are common evaluation metrics for classification models?
+                <textarea name="q31" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">32.</span>
+                How does the confusion matrix work?
+                <textarea name="q32" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">33.</span>
+                What is Precision, Recall, and F1-score?
+                <textarea name="q33" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">34.</span>
+                What is the difference between accuracy and F1-score?
+                <textarea name="q34" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">35.</span>
+                What is ROC-AUC, and why is it useful?
+                <textarea name="q35" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">36.</span>
+                How do you interpret a Precision-Recall Curve?
+                <textarea name="q36" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">37.</span>
+                What are common regression evaluation metrics?
+                <textarea name="q37" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">38.</span>
+                How do you calculate Mean Squared Error (MSE)?
+                <textarea name="q38" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">39.</span>
+                What is R-squared, and what does it indicate?
+                <textarea name="q39" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">40.</span>
+                How do you compare two regression models?
+                <textarea name="q40" placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                <span class="question-number">41.</span>
+                Why is RMSE often preferred over MSE?
+                <textarea name="q41" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">42.</span>
+                What is Mean Absolute Error (MAE), and how does it differ from RMSE?
+                <textarea name="q42" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">43.</span>
+                How does cross-validation help in model evaluation?
+                <textarea name="q43" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">44.</span>
+                What is the purpose of a validation set?
+                <textarea name="q44" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">45.</span>
+                Why is it important to separate training and test datasets?
+                <textarea name="q45" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">46.</span>
+                What is stratified sampling, and why is it used?
+                <textarea name="q46" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">47.</span>
+                How does bootstrapping help in model evaluation?
+                <textarea name="q47" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">48.</span>
+                What is permutation importance in feature evaluation?
+                <textarea name="q48" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">49.</span>
+                How do you handle high variance in model evaluation?
+                <textarea name="q49" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">50.</span>
+                What is Cohen’s Kappa score, and when is it used?
+                <textarea name="q50" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">51.</span>
+                What is bias in machine learning?
+                <textarea name="q51" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">52.</span>
+                What is variance in machine learning?
+                <textarea name="q52" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">53.</span>
+                What is the bias-variance tradeoff?
+                <textarea name="q53" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">54.</span>
+                How does model complexity affect bias and variance?
+                <textarea name="q54" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">55.</span>
+                How does cross-validation help in balancing bias and variance?
+                <textarea name="q55" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">56.</span>
+                What techniques can be used to reduce overfitting?
+                <textarea name="q56" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">57.</span>
+                What is underfitting, and how do you fix it?
+                <textarea name="q57" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">58.</span>
+                How does regularization help in reducing overfitting?
+                <textarea name="q58" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">59.</span>
+                What is the difference between L1 and L2 regularization?
+                <textarea name="q59" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">60.</span>
+                What is dropout in neural networks, and how does it help?
+                <textarea name="q60" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">61.</span>
+                What is feature engineering?
+                <textarea name="q61" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">62.</span>
+                Why is feature selection important?
+                <textarea name="q62" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">63.</span>
+                How does one-hot encoding work?
+                <textarea name="q63" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">64.</span>
+                What is feature scaling, and why is it needed?
+                <textarea name="q64" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">65.</span>
+                What is the difference between normalization and standardization?
+                <textarea name="q65" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">66.</span>
+                What is polynomial feature transformation?
+                <textarea name="q66" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">67.</span>
+                How does PCA differ from feature selection?
+                <textarea name="q67" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">68.</span>
+                How do you handle categorical variables in machine learning?
+                <textarea name="q68" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">69.</span>
+                How does feature engineering impact model performance?
+                <textarea name="q69" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">70.</span>
+                What are some common techniques for feature selection?
+                <textarea name="q70" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">71.</span>
+                What is feature extraction?
+                <textarea name="q71" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">72.</span>
+                How does binning help in feature engineering?
+                <textarea name="q72" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">73.</span>
+                What is mutual information in feature selection?
+                <textarea name="q73" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">74.</span>
+                What are interaction features?
+                <textarea name="q74" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">75.</span>
+                How does text feature engineering differ from numerical feature engineering?
+                <textarea name="q75" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">76.</span>
+                What is an imbalanced dataset?
+                <textarea name="q76" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">77.</span>
+                How can class imbalance affect model performance?
+                <textarea name="q77" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">78.</span>
+                What techniques can be used to handle imbalanced data?
+                <textarea name="q78" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">79.</span>
+                What is SMOTE (Synthetic Minority Over-sampling Technique)?
+                <textarea name="q79" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">80.</span>
+                How does undersampling work in handling imbalanced datasets?
+                <textarea name="q80" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">81.</span>
+                When should you use weighted loss functions in classification?
+                <textarea name="q81" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">82.</span>
+                What is cost-sensitive learning?
+                <textarea name="q82" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">83.</span>
+                What is the role of resampling in imbalanced datasets?
+                <textarea name="q83" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">84.</span>
+                How do you measure the impact of handling class imbalance?
+                <textarea name="q84" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">85.</span>
+                Can ensemble methods help in handling imbalanced datasets?
+                <textarea name="q85" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">86.</span>
+                What is focal loss, and when is it used?
+                <textarea name="q86" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">87.</span>
+                How does data augmentation help in handling imbalance?
+                <textarea name="q87" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">88.</span>
+                What is the difference between oversampling and synthetic data generation?
+                <textarea name="q88" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">89.</span>
+                How does threshold moving help with class imbalance?
+                <textarea name="q89" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">90.</span>
+                What is a balanced accuracy metric?
+                <textarea name="q90" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">91.</span>
+                What is hyperparameter tuning?
+                <textarea name="q91" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">92.</span>
+                How does Grid Search work for hyperparameter tuning?
+                <textarea name="q92" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">93.</span>
+                How does Random Search work for hyperparameter tuning?
+                <textarea name="q93" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">94.</span>
+                What is the difference between model parameters and hyperparameters?
+                <textarea name="q94" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">95.</span>
+                How does Bayesian Optimization work in hyperparameter tuning?
+                <textarea name="q95" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">96.</span>
+                What is early stopping in hyperparameter tuning?
+                <textarea name="q96" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">97.</span>
+                What is the impact of hyperparameter tuning on model performance?
+                <textarea name="q97" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">98.</span>
+                What is the difference between learning rate and batch size in deep learning?
+                <textarea name="q98" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">99.</span>
+                Why is tuning hyperparameters crucial for machine learning models?
+                <textarea name="q99" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            <div class="question">
+                <span class="question-number">100.</span>
+                What tools and libraries can be used for hyperparameter tuning?
+                <textarea name="q100" placeholder="Type your answer here..."></textarea>
+            </div>
+            
+            
+            <button type="submit">SUBMIT EXAMINATION</button>
+        </form>
+    </div>
+    
+    <div class="watermark">EXAM PAPER</div>
+</body>
+</html>
